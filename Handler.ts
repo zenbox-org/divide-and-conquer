@@ -1,6 +1,6 @@
-import { Filter } from '../../util/ensure'
-import { Transition } from './Transition'
+import { Filter } from '../decimaker/models/Filter'
 import { Step } from './Step'
+import { Transition } from './Transition'
 
 export interface Handler<Params, State> {
   filter: Filter<Step<Params, State>>
