@@ -1,11 +1,11 @@
+import { equals } from 'remeda'
+import { expectEqualResults } from '../utils/chai/expectEqualResults'
+import { stringify } from '../utils/JSON'
+import { impl } from '../utils/todo'
 import { Handler } from './Handler'
+import { Plan, runTestWithPlans } from './runTest'
 import { Step } from './Step'
 import { Transition } from './Transition'
-import { Plan, runTestWithPlans } from './runTest'
-import { equals } from 'remeda'
-import { impl } from '../utils/todo'
-import { stringify } from '../utils/JSON'
-import { expectEqualResults } from '../utils/chai/expectEqualResults'
 
 const expectEqualResultsTest = expectEqualResults('Actual', 'Expected')
 

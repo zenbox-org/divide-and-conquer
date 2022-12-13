@@ -1,6 +1,6 @@
-import { GetValues, getValuesOfInductive, getValuesOfRange } from '../getValues'
 import { strict as assert } from 'assert'
 import { concat, uniq } from 'remeda'
+import { GetValues, getValuesOfInductive, getValuesOfRange } from '../getValues'
 
 // const JavascriptInteger: InductiveTypeInfo<number> & RangeTypeInfo<number> = {
 //   isInductive: true,

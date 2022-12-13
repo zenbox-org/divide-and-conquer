@@ -1,5 +1,5 @@
-import { Transistor } from './Transistor'
 import { mapAsync } from 'libs/utils/promise'
+import { Transistor } from './Transistor'
 
 export async function runTestWithTransistors<State>(transistors: Transistor<State>[], state: State) {
   return mapAsync(transistors, t => t(state))

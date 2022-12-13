@@ -1,6 +1,6 @@
-import { Transition } from './Transition'
 import { GetParamsArray } from './getParamsArray'
 import { Handler } from './Handler'
+import { Transition } from './Transition'
 
 export type Transistor<State> = (state: State) => Promise<State[]>
 
