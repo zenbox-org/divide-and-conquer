@@ -1,12 +1,12 @@
-import { Transition } from './Transition'
+import { TransitionP } from './TransitionP'
 
 export interface Step<Params, State> {
-  transition: Transition<Params, State>
+  transition: TransitionP<Params, State>
   params: Params
   state: State
 }
 
-export function step<Params, State>(transition: Transition<Params, State>, params: Params, state: State) {
+export function step<Params, State>(transition: TransitionP<Params, State>, params: Params, state: State) {
   return { transition, params, state }
 }
 

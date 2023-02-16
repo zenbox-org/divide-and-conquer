@@ -1,11 +1,11 @@
 import { Step } from './Step'
-import { Transition } from './Transition'
+import { TransitionP } from './TransitionP'
 
 export interface Handler<Params, State> {
   filter: (step: Step<Params, State>) => boolean,
-  transition: Transition<Params, State>
+  transition: TransitionP<Params, State>
 }
 
-export function handler<Params, State>(filter: (step: Step<Params, State>) => boolean, transition: Transition<Params, State>): Handler<Params, State> {
+export function handler<Params, State>(filter: (step: Step<Params, State>) => boolean, transition: TransitionP<Params, State>): Handler<Params, State> {
   return { filter, transition }
 }

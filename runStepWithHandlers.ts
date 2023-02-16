@@ -5,7 +5,7 @@ import { impl } from '../utils/todo'
 import { Handler } from './Handler'
 import { Plan, runTestWithPlans } from './runTest'
 import { Step } from './Step'
-import { Transition } from './Transition'
+import { TransitionP } from './TransitionP'
 
 const expectEqualResultsTest = expectEqualResults('Actual', 'Expected')
 
@@ -30,6 +30,6 @@ export const runStepWithHandlers = <Params, State>(plans: Plan<State>[], handler
 /**
  * Stop: we need separate handler.filter & handler.transition functions because we need to find a handler synchronously
  */
-export const runStepWithPartials = <Params, State>(partials: Transition<Params, State>[]) => async (step: Step<Params, State>) => {
+export const runStepWithPartials = <Params, State>(partials: TransitionP<Params, State>[]) => async (step: Step<Params, State>) => {
   throw impl()
 }

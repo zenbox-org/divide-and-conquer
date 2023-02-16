@@ -1,6 +1,6 @@
 import { GetParamsArray } from './getParamsArray'
 import { Handler } from './Handler'
-import { Transition } from './Transition'
+import { TransitionP } from './TransitionP'
 
 export type Transistor<State> = (state: State) => Promise<State[]>
 
@@ -12,6 +12,6 @@ export const getTransistor = <Params, State>(transistor: TransistorOld<Params, S
 }
 
 export interface TransistorOld<Params, State> {
-  transition: Transition<Params, State>
+  transition: TransitionP<Params, State>
   getParamsArray: GetParamsArray<Params, State>
 }
