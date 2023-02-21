@@ -5,7 +5,7 @@ import { impl } from '../utils/todo'
 import { Handler } from './Handler'
 import { Plan, runTestWithPlans } from './runTest'
 import { Step } from './Step'
-import { TransitionP } from './TransitionP'
+import { TransitionP } from './Transition'
 
 const expectEqualResultsTest = expectEqualResults('Actual', 'Expected')
 

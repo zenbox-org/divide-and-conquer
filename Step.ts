@@ -1,4 +1,4 @@
-import { TransitionP } from './TransitionP'
+import { TransitionP } from './Transition'
 
 export interface Step<Params, State> {
   transition: TransitionP<Params, State>

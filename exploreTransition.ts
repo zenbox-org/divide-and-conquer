@@ -1,6 +1,6 @@
 import { impl } from 'libs/utils/todo'
 import { Step } from './Step'
-import { TransitionP } from './TransitionP'
+import { TransitionP } from './Transition'
 
 export type GetSteps<Params, State> = Promise<Step<Params, State>[]>
 

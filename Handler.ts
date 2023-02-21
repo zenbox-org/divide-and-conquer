@@ -1,5 +1,5 @@
 import { Step } from './Step'
-import { TransitionP } from './TransitionP'
+import { TransitionP } from './Transition'
 
 export interface Handler<Params, State> {
   filter: (step: Step<Params, State>) => boolean,
