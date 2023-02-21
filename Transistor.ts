@@ -1,8 +1,9 @@
+import { MutatorP } from '../generic/models/Mutator'
 import { GetParamsArray } from './getParamsArray'
 import { Handler } from './Handler'
 import { TransitionP } from './Transition'
 
-export type Transistor<State> = (state: State) => Promise<State[]>
+export type Transistor<State> = MutatorP<State>
 
 export const getTransistor = <Params, State>(transistor: TransistorOld<Params, State>, handlers: Handler<Params, State>[]) => async (state: State) => {
   const { transition, getParamsArray } = transistor

@@ -2,10 +2,10 @@
 import { clone, merge } from 'remeda'
 import { GenericState } from '../GenericState'
 
-export type GenericUpdate<Data, Out, Err extends Error> = (state: Readonly<GenericState<Data, Out, Err>>) => Promise<Partial<GenericState<Data, Out, Err>>>
+export type GenericUpdateP<Data, Out, Err extends Error> = (state: Readonly<GenericState<Data, Out, Err>>) => Promise<Partial<GenericState<Data, Out, Err>>>
 
 // eslint-disable-next-line @typescript-eslint/ban-types
-export function toGenericTransition<Data, Out, Err extends Error>(update: GenericUpdate<Data, Out, Err>) {
+export function toGenericTransition<Data, Out, Err extends Error>(update: GenericUpdateP<Data, Out, Err>) {
   return async (state: GenericState<Data, Out, Err>) => {
     try {
       // clone is required because the update function may mutate the argument
