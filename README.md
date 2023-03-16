@@ -58,6 +58,32 @@ Options:
 * Ask the programmer to write the branches & the reduced programs
 * Divide-and-Conquer
   * Get a list of relations from the test target
+* Infer properties from data
+  * Generate multiple input-output pairs
+    * Tips
+      * Reduce the search space of numbers by reducing the bounds
+        * Examples
+          * Use `[0, 5000]` instead of `[0, uint256Max]` 
+  * For each input-output pair
+    * Generate projections
+      * Concat lists of
+        * Automatically generated projections
+          * Examples
+            * `array.length`
+        * Programmer-specified projections
+          * `number.isOdd`
+      * Notes
+        * Include projections for the whole dataset
+          * Examples
+            * max `array.length` (to check out-of-gas errors)
+  * For each pair of projections
+    * Generate relations
+  * For each relation
+    * Calculate statistics as `{ total: number, positive: number }`
+  * Sort statistics by "assuredness" (distance from half of total)
+    * `const isAssured = (total: number) => (positive: number) => abs(sub(total / 2, positive))`
+  * Ask the programmer to verify each statistic
+* 
 
 ### Write the test
 
