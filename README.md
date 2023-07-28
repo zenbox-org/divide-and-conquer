@@ -63,7 +63,7 @@ Options:
     * Tips
       * Reduce the search space of numbers by reducing the bounds
         * Examples
-          * Use `[0, 5000]` instead of `[0, uint256Max]` 
+          * Use `[0, 5000]` instead of `[0, uint256Max]`
   * For each input-output pair
     * Generate projections
       * Concat lists of
@@ -83,7 +83,7 @@ Options:
   * Sort statistics by "assuredness" (distance from half of total)
     * `const isAssured = (total: number) => (positive: number) => abs(sub(total / 2, positive))`
   * Ask the programmer to verify each statistic
-* 
+*
 
 ### Write the test
 
