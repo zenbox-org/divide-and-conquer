@@ -1,5 +1,5 @@
 import { equals } from 'remeda'
-import { expectEqualResults } from '../utils/chai/expectEqualResults'
+import { expectEqualResults } from '../chai/expectEqualResults'
 import { stringify } from '../utils/JSON'
 import { impl } from '../utils/todo'
 import { Handler } from './Handler'
