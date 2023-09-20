@@ -83,7 +83,6 @@ Options:
   * Sort statistics by "assuredness" (distance from half of total)
     * `const isAssured = (total: number) => (positive: number) => abs(sub(total / 2, positive))`
   * Ask the programmer to verify each statistic
-*
 
 ### Write the test
 
