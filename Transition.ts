@@ -1,8 +1,8 @@
-import { Mutator, MutatorP } from '../generic/models/Mutator'
+import { Modifier, ModifierP } from '../generic/models/Modifier'
 
-export type Transition<Params, State> = (params: Params) => Mutator<State>
+export type Transition<Params, State> = (params: Params) => Modifier<State>
 
-export type TransitionP<Params, State> = (params: Params) => MutatorP<State>
+export type TransitionP<Params, State> = (params: Params) => ModifierP<State>
 
 export const emptyTransitionP = <Params, State>(params: Params) => async (state: State) => state
 

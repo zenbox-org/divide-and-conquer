@@ -1,6 +1,6 @@
-import { MutatorP } from '../generic/models/Mutator'
+import { ModifierP } from '../generic/models/Modifier'
 
-export const runTransitions = <State>(parseState: (s: State) => State) => (transitions: MutatorP<State>[]) => async (state: State) => {
+export const runTransitions = <State>(parseState: (s: State) => State) => (transitions: ModifierP<State>[]) => async (state: State) => {
   return transitions.reduce<Promise<State>>(async (state, transition) => {
     /**
      * `parseState` serves two purposes:
