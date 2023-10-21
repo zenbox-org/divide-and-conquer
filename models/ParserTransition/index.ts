@@ -1,5 +1,5 @@
 import { ZodError } from 'zod'
-import { AsserterTwoSym } from '../../../decimaker/models/Asserter'
+import { AsserterTwoSym } from '../../../utils/Asserter'
 
 export type AsserterTransition<Action, State, Error> = (action: Action) => AsserterTwoSym<State>
 
