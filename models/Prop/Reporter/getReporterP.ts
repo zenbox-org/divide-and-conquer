@@ -1,5 +1,5 @@
 import { Arbitrary } from 'fast-check/lib/types/check/arbitrary/definition/Arbitrary'
-import { Filter } from '../../../../generic/models/Filter'
+import { Filter } from '../../../../utils/Filter'
 import { getRandomValueFromArbitrary } from '../../../GetRandomValueFromRandom'
 import { Reporter } from './index'
 

@@ -1,4 +1,4 @@
-import { Filter, FilterTwo } from '../../../generic/models/Filter'
+import { Filter, FilterTwo } from '../../../utils/Filter'
 
 export const imply = <T>(premise: Filter<T>, conclusion: Filter<T>): Filter<T> => (a) => premise(a) ? conclusion(a) : true
 

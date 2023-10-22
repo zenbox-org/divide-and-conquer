@@ -1,6 +1,6 @@
 import { test } from '@jest/globals'
 import { Arbitrary } from 'fast-check/lib/types/check/arbitrary/definition/Arbitrary'
-import { Filter, FilterTwo } from '../../../generic/models/Filter'
+import { Filter, FilterTwo } from '../../../utils/Filter'
 import { expectCheckStochDef, expectCheckTwoSymStochDef } from './expectCheck'
 import { implyTwo } from './imply'
 

@@ -1,4 +1,4 @@
-import { FilterTwo } from '../../../generic/models/Filter'
+import { FilterTwo } from '../../../utils/Filter'
 import { TransitionGen } from '../../../generic/models/Transition'
 import { assertEq } from '../../../utils/assert'
 import { GetLens, UnsetLens } from '../../../utils/Lens'

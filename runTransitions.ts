@@ -1,4 +1,4 @@
-import { ModifierP } from '../generic/models/Modifier'
+import { ModifierP } from '../utils/Modifier'
 
 export const runTransitions = <State>(parseState: (s: State) => State) => (transitions: ModifierP<State>[]) => async (state: State) => {
   return transitions.reduce<Promise<State>>(async (state, transition) => {

@@ -1,7 +1,8 @@
 import { ZodObject, ZodType } from 'zod'
 import { ZodRawShape } from 'zod/lib/types'
-import { Filter } from '../generic/models/Filter'
-import { Mapper } from '../generic/models/Mapper'
+import { Filter } from '../utils/Filter'
+import { Mapper } from '../utils/Mapper'
+
 import { todo } from '../utils/todo'
 
 type Seed = number

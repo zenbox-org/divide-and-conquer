@@ -1,4 +1,4 @@
-import { Mapper, MapperP } from '../generic/models/Mapper'
+import { Mapper, MapperP } from '../utils/Mapper'
 
 export type Updater<State> = Mapper<State, Partial<State>>
 

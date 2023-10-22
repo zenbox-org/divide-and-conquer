@@ -1,4 +1,4 @@
-import { Filter } from '../../../generic/models/Filter'
+import { Filter } from '../../../utils/Filter'
 
 export interface Prop<Val> {
   pre: Filter<Val> // premise

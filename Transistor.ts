@@ -1,4 +1,4 @@
-import { ModifierP } from '../generic/models/Modifier'
+import { ModifierP } from '../utils/Modifier'
 import { GetParamsArray } from './getParamsArray'
 import { Handler } from './Handler'
 import { TransitionP } from './Transition'

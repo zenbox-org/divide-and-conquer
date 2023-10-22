@@ -1,5 +1,5 @@
 import { Arbitrary } from 'fast-check/lib/types/check/arbitrary/definition/Arbitrary'
-import { Filter, FilterTwo } from '../../../generic/models/Filter'
+import { Filter, FilterTwo } from '../../../utils/Filter'
 import { getReports } from './getReports'
 import { getReporter } from './Reporter/getReporterP'
 import { getReporterTwoSym } from './Reporter/getReporterTwoSym'

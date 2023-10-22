@@ -1,4 +1,4 @@
-import { Modifier, ModifierP } from '../generic/models/Modifier'
+import { Modifier, ModifierP } from '../utils/Modifier'
 
 export type Transition<Params, State> = (params: Params) => Modifier<State>
 

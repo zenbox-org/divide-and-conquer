@@ -1,7 +1,7 @@
 import { tuple } from 'fast-check'
 import { Arbitrary } from 'fast-check/lib/types/check/arbitrary/definition/Arbitrary'
-import { FilterTwo } from '../../../../generic/models/Filter'
-import { getMapperOneTupleFromMapperTwo } from '../../../../generic/models/Mapper/getMapperOneTupleFromMapperTwo'
+import { FilterTwo } from '../../../../utils/Filter'
+import { getMapperOneTupleFromMapperTwo } from '../../../../utils/Mapper/getMapperOneTupleFromMapperTwo'
 import { getReporter } from './getReporterP'
 
 export const getReporterTwoSym = <T>(filter: FilterTwo<T>) => (arbitrary: Arbitrary<T>) => {

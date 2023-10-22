@@ -1,4 +1,4 @@
-import { Filter } from '../../../generic/models/Filter'
+import { Filter } from '../../../utils/Filter'
 import { StatsBasic } from './Stats'
 
 export const getStats = (checker: Filter<number>) => (from: number, count: number): StatsBasic => {

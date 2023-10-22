@@ -1,5 +1,5 @@
 import { clone } from 'remeda'
-import { Modifier } from '../generic/models/Modifier'
+import { Modifier } from '../utils/Modifier'
 
 /**
  * Allows to mutate the value in-place
