@@ -1,9 +1,10 @@
 import { expect, test } from '@jest/globals'
+import { strict as assert } from 'assert'
 import { integer, tuple } from 'fast-check'
 import { identity } from 'remeda'
 import { exhaust } from '../../../../decimaker/models/Generator/exhaust'
-import { getMapperOneTupleFromMapperTwo } from '../../../../utils/Mapper/getMapperOneTupleFromMapperTwo'
 import { Mapper } from '../../../../utils/Mapper'
+import { getMapperOneTupleFromMapperTwo } from '../../../../utils/Mapper/getMapperOneTupleFromMapperTwo'
 import { withSuffixF } from '../../../../utils/string/withSuffix'
 import { getRandomValueFromArbitrary } from '../../../GetRandomValueFromRandom'
 import { expectCheckTwoSymmetric, expectCheckTwoSymmetricStochastic100 } from '../expectCheck'
@@ -78,4 +79,12 @@ test(withSuffixF(addIsCommutative, 'exhaustive'), () => {
   }
   const generatorOfNumbers = getGenerator(identity)(identity)(1000n, 10n)
   const numbers = exhaust(generatorOfNumbers)
+})
+
+test.skip(withSuffixF(addIsCommutative, 'exhaustiveV2'), () => {
+  for (let a = 0; a < Number.MAX_SAFE_INTEGER; a++) {
+    for (let b = 0; b < Number.MAX_SAFE_INTEGER; b++) {
+      assert(addIsCommutative(a, b))
+    }
+  }
 })
